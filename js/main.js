@@ -6,7 +6,7 @@ const articleList = document.querySelector('.article-list');
 const tabs = document.querySelectorAll('.tab-button');
 
 // 从 JSON 文件加载数据
-fetch('../articles.json')  // 注意路径：因为 main.js 在 js 文件夹里，所以用 .. 回到根目录
+fetch('/nonscience-website/articles.json') // 注意路径：因为 main.js 在 js 文件夹里，所以用 .. 回到根目录
     .then(response => response.json())
     .then(data => {
         articlesData = data;
