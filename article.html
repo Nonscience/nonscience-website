@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Article | Nonscience</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <main class="article-page">
+    <article class="article-shell" id="article-app" aria-live="polite"></article>
+  </main>
+
+  <script>
+    (async () => {
+      const app = document.getElementById("article-app");
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+
+      const escapeHtml = (value) =>
+        String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/\"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+
+      const formatDate = (dateString) => {
+        const date = new Date(dateString);
+        if (Number.isNaN(date.getTime())) {
+          return dateString;
+        }
+        return date.toLocaleDateString("zh-CN", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        });
+      };
+
+      try {
+        const response = await fetch("./data/articles.json");
+        if (!response.ok) {
+          throw new Error(`Failed to fetch articles: ${response.status}`);
+        }
+
+        const articles = await response.json();
+        const article = articles.find((item) => item.id === id);
+
+        if (!article) {
+          app.innerHTML = `
+            <h1 class="page-title">文章不存在</h1>
+            <div class="page-body">
+              <p>未找到对应文章，请返回首页查看最新列表。</p>
+            </div>
+            <a class="back-home" href="./index.html#articles">← 返回首页</a>
+          `;
+          return;
+        }
+
+        const bodyHtml = article.body
+          .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
+          .join("");
+
+        const referenceHtml = article.references
+          .map((item) => `<li>${escapeHtml(item)}</li>`)
+          .join("");
+
+        app.innerHTML = `
+          <h1 class="page-title">${escapeHtml(article.title)}</h1>
+          <p class="article-meta">作者：${escapeHtml(article.author)} ｜ 日期：${escapeHtml(formatDate(article.date))}</p>
+          <section class="article-content">${bodyHtml}</section>
+          <section class="references">
+            <h2>参考文献</h2>
+            <ul>${referenceHtml}</ul>
+          </section>
+          <a class="back-home" href="./index.html#articles">← 返回首页</a>
+        `;
+      } catch (error) {
+        app.innerHTML = `
+          <h1 class="page-title">加载失败</h1>
+          <div class="page-body">
+            <p>文章数据暂时无法访问，请稍后重试。</p>
+            <p>${escapeHtml(error.message)}</p>
+          </div>
+          <a class="back-home" href="./index.html#articles">← 返回首页</a>
+        `;
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿{
+  "home": {
+    "hero": {
+      "titleHtml": "<span class=\"lead-initial\">Nonsen</span><span class=\"title-accent\">s</span>e is the New S<span class=\"title-accent\">ci</span>en<span class=\"title-accent\">c</span>e.",
+      "subtitle": "废话皆真理，扯淡即科学。"
+    },
+    "news": [
+      {
+        "title": "Vol.1 正式上线：当科学开始扯淡",
+        "description": "本期收录 6 篇跨学科稿件，从量子物理到社交媒体废话学。点击阅读。",
+        "tag": "新刊上线",
+        "date": "2026/03/15",
+        "target": "vol1"
+      },
+      {
+        "title": "Vol.2 征稿进行中",
+        "description": "不限主题，欢迎任何有据的扯淡、严肃的胡说。截稿日期：2026.04.30。",
+        "tag": "常规征稿",
+        "date": "2026/03/26",
+        "target": "vol2"
+      }
+    ]
+  },
+  "announcements": {
+    "html": "<section class=\"container section-separator block-space\"><h1 class=\"section-title\">公告 Announcements</h1><div class=\"news-list\"><article id=\"vol1\" class=\"card-base news-card\"><h2 class=\"news-title\">Vol.1 正式上线：当科学开始扯淡</h2><p class=\"news-meta-text\">首期发布聚焦“伪命题与真问题”的传播机制，收录跨媒介研究与实验观察。欢迎读者批注与复核。</p><div class=\"news-footer\"><span class=\"news-tag\">新刊上线</span><time class=\"news-time\">2026/03/15</time></div></article><article id=\"vol2\" class=\"card-base news-card\"><h2 class=\"news-title\">Vol.2 征稿进行中</h2><p class=\"news-meta-text\">征稿主题扩展至“算法叙事”“公共知识误读”“学术语气模拟”等方向，投稿截止日期为 2026.04.30。</p><div class=\"news-footer\"><span class=\"news-tag\">常规征稿</span><time class=\"news-time\">2026/03/26</time></div></article><article class=\"card-base news-card\"><h2 class=\"news-title\">编辑工作流更新说明</h2><p class=\"news-meta-text\">自 2026 年 4 月起，审稿将采用双阶段反馈机制：先结构性意见，后细节性建议，以提升修改效率。</p><div class=\"news-footer\"><span class=\"news-tag\">流程更新</span><time class=\"news-time\">2026/03/28</time></div></article></div></section>"
+  },
+  "submit": {
+    "html": "<section class=\"container section-separator submit-wrap\"><h1 class=\"section-title center\">投稿 Submit</h1><p class=\"submit-desc\">欢迎提交围绕“看似离谱、可被验证”命题展开的短文、实验记录与田野观察。<br />稿件建议包含摘要、方法、发现与局限性，便于同行讨论与复现。</p><a class=\"btn-solid\" href=\"mailto:nonsciencejournal@163.com\"><span class=\"btn-cn\">邮箱投稿</span><span class=\"btn-en\">EMAIL</span></a></section><section class=\"container block-space\"><div class=\"card-base news-card\"><h2 class=\"news-title\">投稿规范（简版）</h2><p class=\"news-meta-text\">1) 字数建议 1500-5000；2) 至少附两条可核查来源；3) 文件名格式：作者_题目_日期；4) 邮件标题格式：[投稿] 作者名 - 稿件题目。</p><div class=\"news-footer\"><span class=\"news-tag\">投稿须知</span><time class=\"news-time\">常年开放</time></div></div></section>"
+  },
+  "about": {
+    "html": "<section class=\"container section-separator block-space\"><h1 class=\"section-title\">关于 About</h1><div class=\"page-body\"><p>Nonscience 是一个实验性内容计划，尝试用规范写作去审视非规范叙事。我们关注知识传播中的误读、修辞偏置与语义漂移。</p><p>项目坚持“可讨论、可复核、可追踪”的编辑原则：观点可以激进，论证必须清晰；表达可以风格化，证据必须可定位。</p><p>本网站文本为创作演示样本，不构成现实科研结论或公共建议。欢迎以批评、反驳与补充的方式参与协作。</p></div></section>"
+  }
+}

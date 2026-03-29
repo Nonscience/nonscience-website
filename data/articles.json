@@ -1,0 +1,93 @@
+﻿[
+  {
+    "id": "nonsense-entropy-001",
+    "project": "NONSCIENCE",
+    "title": "文章标题之一：熵增与扯淡的可重复性实验",
+    "author": "蛋蛋",
+    "date": "2026-03-25",
+    "excerpt": "我们在 12 组对照语境中重复生成废话样本，讨论其被误判为真理的概率阈值。",
+    "status": "新刊上线",
+    "body": [
+      "本研究试图回答一个看似荒诞却十分实际的问题：当一句话越像结论，它是否越容易被当作结论。我们构建了 12 组场景，分别控制术语密度、句法复杂度和语气强度。",
+      "实验结果显示，在信息噪声较高的社交语境中，带有伪学术结构的陈述更容易被误判为可靠观点。",
+      "我们进一步提出扯淡熵增模型，揭示知识与话术在传播层面的竞争关系。"
+    ],
+    "references": [
+      "Wang, L. (2024). Ambiguous Persuasion in Public Media.",
+      "Li, H. & Zhao, Q. (2025). Rhetoric Density and Trust Bias.",
+      "Nonscience Lab. (2026). Internal Notes on Noise-Driven Narratives."
+    ]
+  },
+  {
+    "id": "nonsense-peer-review-002",
+    "project": "NONSCIENCE",
+    "title": "文章标题之二：同行评审中的语义眩晕效应",
+    "author": "扯淡研究组",
+    "date": "2026-03-18",
+    "excerpt": "通过匿名互评样本，我们观察到审稿意见在高术语密度下出现集体含糊趋势。",
+    "status": "常规征稿",
+    "body": [
+      "我们收集了 84 份匿名评审意见，并建立术语密度评分。评分越高，意见中建议大修的理由越抽象。",
+      "这并不意味着评审机制失效，而是提示文本过度追求像论文时其可讨论性反而下降。",
+      "编辑部建议稿件保留可验证的观察过程，减少结论先行的修辞惯性。"
+    ],
+    "references": [
+      "Chen, R. (2023). Review Friction and Editorial Ambiguity.",
+      "Xu, Y. (2025). Terminology Inflation in Academic Communities."
+    ]
+  },
+  {
+    "id": "nonsense-field-notes-003",
+    "project": "NONSCIENCE",
+    "title": "文章标题之三：街头样本中的伪科学叙事模板",
+    "author": "蛋挞",
+    "date": "2026-03-11",
+    "excerpt": "我们在公开讲座与短视频评论区采集语料，归纳了 5 种高频句式。",
+    "status": "新刊上线",
+    "body": [
+      "研究团队在 4 周内采集了 1200 条公众语料，重点标记含有因果暗示但缺乏证据链的句子。",
+      "我们将这些句式分为机制跳跃型、数据幻觉型、引用遮蔽型等五类，并进行了反例教学。",
+      "经过一次结构化拆解训练后，受试者对伪科学模板的识别率提升了 37%。"
+    ],
+    "references": [
+      "Deng, P. (2022). Public Reasoning Under Narrative Pressure.",
+      "Nonscience Editorial Team. (2026). Field Corpus v1.3."
+    ]
+  },
+  {
+    "id": "nonsense-journalism-004",
+    "project": "NONSCIENCE",
+    "title": "文章标题之四：新闻标题中的确定性错觉",
+    "author": "鹦鹉螺",
+    "date": "2026-03-07",
+    "excerpt": "对 300 条热点标题进行分层标注，检验情绪强度与可信错觉的相关性。",
+    "status": "专题研究",
+    "body": [
+      "我们发现标题中的绝对化词汇会显著提升即时点击率，但也提升后续反驳率。",
+      "当标题在主观立场与客观描述之间切换时，读者对来源可靠性的判断出现摇摆。",
+      "建议媒体在标题层保留不确定性标记，以减少误导性确定表述。"
+    ],
+    "references": [
+      "Qiu, M. (2024). Certainty Signals in Digital Headlines.",
+      "Song, J. (2025). Click Bias and Epistemic Trust."
+    ]
+  },
+  {
+    "id": "nonsense-method-005",
+    "project": "NONSCIENCE",
+    "title": "文章标题之五：胡说方法论的边界条件",
+    "author": "编辑部",
+    "date": "2026-03-02",
+    "excerpt": "提出“胡说方法论”的三条边界，区分创造性假设与无约束断言。",
+    "status": "方法论文",
+    "body": [
+      "边界一：必须可被证伪；边界二：必须可复述；边界三：必须有最小证据链。",
+      "当任一边界缺失时，文本更接近表演型观点，而非研究型表达。",
+      "该边界框架可作为课程写作与投稿初筛的通用标准。"
+    ],
+    "references": [
+      "Nonscience Editorial Board. (2026). Method Notes v2.0.",
+      "He, X. (2023). Falsifiability in Popular Science Writing."
+    ]
+  }
+]
